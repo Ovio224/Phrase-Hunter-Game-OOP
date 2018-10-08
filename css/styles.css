@@ -186,6 +186,9 @@ button {
 .start a {
   color: #fff;
 }
+.main-container{
+  background-color: #F5F7DC;
+}
 
 .win {
   background-color: var(--color-win);
