@@ -66,6 +66,7 @@ button {
 }
 
 .main-container {
+  background-color: #F5F7DC;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -159,6 +160,15 @@ button {
   border-right: solid 3px rgba(0, 0, 0, 0);
 }
 
+.btn{
+  width: 200px;
+  margin: 0 auto;
+  display: none;
+}
+
+.btn:hover{
+  background-color: #FDD017;
+}
 
 /* Overlay */
 
@@ -186,9 +196,6 @@ button {
 .start a {
   color: #fff;
 }
-.main-container{
-  background-color: #F5F7DC;
-}
 
 .win {
   background-color: var(--color-win);
@@ -205,3 +212,27 @@ button {
 .lose a {
   color: var(--color-lose);
 }
+.main-container {
+  background: linear-gradient(44deg, #7cd5d5, #7780b6, #aa9bdb);
+  background-size: 600% 600%;
+  
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+

@@ -6,6 +6,8 @@ class Phrase {
      * Renders the phrases to html
      */
     addPhraseToDisplay(phrase) {
+        const ul = document.createElement('ul');
+        document.querySelector('#phrase').appendChild(ul);
         for (let i = 0; i <= phrase.length; i++) {
             window.splitphrase = phrase.split("");
         }
@@ -26,14 +28,14 @@ class Phrase {
      * @param {Object} e - event object
      */
     checkLetter(letter) {
-        for (let i = 0; i <= splitphrase.length; i++) {
-            if (letter === letter[i]) {
-                window.aux = letter[i];
-                return true;
-            } else {
-                return false;
+        let show = false;
+        for (let i = 0; i < splitphrase.length; i++) {
+            if (letter === splitphrase[i]) {
+                window.aux = splitphrase[i];
+                show = true;
             }
         }
+        return show;
     }
     /**
      * reveals the letter(s) on the board that matches player's selection.
