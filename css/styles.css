@@ -212,6 +212,7 @@ button {
 .lose a {
   color: var(--color-lose);
 }
+body,
 .main-container {
   background: linear-gradient(44deg, #7cd5d5, #7780b6, #aa9bdb);
   background-size: 600% 600%;
