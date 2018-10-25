@@ -1,7 +1,7 @@
 class Game {
     constructor() {
         this.missed = 5;
-        this.phrases = ['hey come here', 'the quick brown fox', 'jumped the', 'animal kingdom', 'what is up', 'hello there', 'general kenobi']; // an array of phrases to use with the game (you'll use a method to create new instances of the Phrase class)
+        this.phrases = ['how are you today', 'the quick brown fox', 'fullstack javascript', 'animal kingdom', 'what is up', 'hello there', 'general kenobi']; // an array of phrases to use with the game (you'll use a method to create new instances of the Phrase class)
     }
     /**
      * this method randomly retrieves one of the phrases stored in the phrases array.
